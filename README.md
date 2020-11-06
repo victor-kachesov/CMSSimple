@@ -2,9 +2,9 @@
 
 System requirements: docker with docker-compose.
 
-For running project open /src folder and run command: docker-compose up
+For running project open /src folder and run command: `docker-compose up`
 
-For stopping project run command: docker-compose down
+For stopping project run command: `docker-compose down`
 
 Then all containers start CMS API will be available by url http://localhost:32770/api/article
 
