@@ -1,4 +1,4 @@
-# It's the simple CMS project.
+# It's the simple CMS project
 
 System requirements: docker with docker-compose.
 
@@ -14,7 +14,7 @@ To switch communication with api to XML format add http header `'Accept'` with v
 
 Each api request should contain http header `'Authorization'` with value `'123456'`;
 
-# API methods:
+# API methods
 
 `GET /api/article` - return list of articles\
 Return list of articles with ids.\
