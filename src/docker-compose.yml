@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  cmssimple.webapi:
+    image: ${DOCKER_REGISTRY-}cmssimplewebapi
+    build:
+      context: .
+      dockerfile: CMSSimple.WebApi/Dockerfile
+    depends_on:
+        - db
+  db:
+    image: cmsdb
+    build:
+      context: .
+      dockerfile: db/Dockerfile
+    ports:
+     - "1444:1433"
+    volumes:
+     - mssqldata:/var/opt/mssql
+
+volumes:
+  mssqldata:
