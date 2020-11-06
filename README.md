@@ -2,7 +2,7 @@
 
 System requirements: docker with docker-compose.
 
-For running project open /src folder and run command: `docker-compose up`
+For running project open `\src` folder and run command: `docker-compose up`
 
 For stopping project run command: `docker-compose down`
 
@@ -16,7 +16,7 @@ Each api request should contain http header 'Authorization' with value '123456';
 
 # API methods:
 
-`GET /api/article` - return list of articles
+`GET /api/article` - return list of articles\
 Request body contract example:
 ```
 {
@@ -27,7 +27,7 @@ Request body contract example:
 }
 ```
 
-`GET /api/article/{id}` - return article by id
+`GET /api/article/{id}` - return the article by id\
 Where id - article id
 
 `POST /api/article` - add new article
@@ -39,7 +39,7 @@ Request body contract example:
 }
 ```
 
-`PUT /api/article/{id}` - update article
+`PUT /api/article/{id}` - update the article\
 Where id - article id
 Request body contract example:
 ```
@@ -49,12 +49,12 @@ Request body contract example:
 }
 ```
 
-`DELETE /api/article/{id}` - delete article
+`DELETE /api/article/{id}` - delete the article\
 Where id - article id
 
 # Tests
 Solution contains CMSSimple.IntegrationTest project.
 Test can be ran from Visual Studio.
-Before running the test you should execute file run_cmsdb_for_test.bat from src/IntegrationTestTools folder.
+Before running the test you should execute file `run_cmsdb_for_test.bat` from `src/IntegrationTestTools` folder.
 It starts new docker container with test database.
-After running the test you should execute file stop_and_remove_cmsdb_for_test.bat from src/IntegrationTestTools folder.
+After running the test you should execute file `stop_and_remove_cmsdb_for_test.bat` from `src/IntegrationTestTools` folder.
