@@ -10,13 +10,14 @@ Then all containers start CMS API will be available by url http://localhost:3277
 
 The communication with api is in a JSON format.
 
-To switch communication with api to XML format add http header 'Accept' with value 'application/xml' to each request.
+To switch communication with api to XML format add http header `'Accept'` with value `'application/xml'` to each request.
 
-Each api request should contain http header 'Authorization' with value '123456';
+Each api request should contain http header `'Authorization'` with value `'123456'`;
 
 # API methods:
 
 `GET /api/article` - return list of articles\
+Return list of articles with ids.\
 Request body contract example:
 ```
 {
@@ -28,7 +29,7 @@ Request body contract example:
 ```
 
 `GET /api/article/{id}` - return the article by id\
-Where id - article id
+Where id - an article id
 
 `POST /api/article` - add new article\
 Request body contract example:
@@ -40,7 +41,7 @@ Request body contract example:
 ```
 
 `PUT /api/article/{id}` - update the article\
-Where id - article id\
+Where id - an article id\
 Request body contract example:
 ```
 {
@@ -50,7 +51,7 @@ Request body contract example:
 ```
 
 `DELETE /api/article/{id}` - delete the article\
-Where id - article id
+Where id - an article id
 
 # Tests
 Solution contains CMSSimple.IntegrationTest project.
