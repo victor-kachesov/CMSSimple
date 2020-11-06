@@ -45,6 +45,16 @@ namespace CMSSimple.BusinessLogic
             {
                 throw new ArgumentException("Unknown FieldToSort");
             }
+
+            if (contract.Limit < 0)
+            {
+                throw new ArgumentException("Limit must be greater than or equal to zero");
+            }
+            
+            if (contract.Offset < 0)
+            {
+                throw new ArgumentException("Offset must be greater than or equal to zero");
+            }
         }
     }
 }
