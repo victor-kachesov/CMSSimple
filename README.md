@@ -1,4 +1,4 @@
-It's the simple CMS project.
+#It's the simple CMS project.
 
 System requirements: docker with docker-compose.
 
@@ -14,39 +14,45 @@ To switch communication with api to XML format add http header 'Accept' with val
 
 Each api request should contain http header 'Authorization' with value '123456';
 
-API methods:
+#API methods:
 
-GET /api/article - return list of articles
+`GET /api/article` - return list of articles
 Request body contract example:
+```
 {
   "FiledToSort" : "Title",
   "Desc" : false,
   "Offset" : 0,
   "Limit" : 10
 }
+```
 
-GET /api/article/{id} - return article by id
+`GET /api/article/{id}` - return article by id
 Where id - article id
 
-POST /api/article - add new article
+`POST /api/article` - add new article
 Request body contract example:
+```
 {
     "title": "title5",
     "body": "body5"
 }
+```
 
-PUT /api/article/{id} - update article
+`PUT /api/article/{id}` - update article
 Where id - article id
 Request body contract example:
+```
 {
     "title": "title5",
     "body": "body5"
 }
+```
 
-DELETE /api/article/{id} - delete article
+`DELETE /api/article/{id}` - delete article
 Where id - article id
 
-Test:
+#Tests:
 Solution contains CMSSimple.IntegrationTest project.
 Test can be ran from Visual Studio.
 Before running the test you should execute file run_cmsdb_for_test.bat from src/IntegrationTestTools folder.
