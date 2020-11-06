@@ -30,7 +30,7 @@ Request body contract example:
 `GET /api/article/{id}` - return the article by id\
 Where id - article id
 
-`POST /api/article` - add new article
+`POST /api/article` - add new article\
 Request body contract example:
 ```
 {
@@ -40,7 +40,7 @@ Request body contract example:
 ```
 
 `PUT /api/article/{id}` - update the article\
-Where id - article id
+Where id - article id\
 Request body contract example:
 ```
 {
